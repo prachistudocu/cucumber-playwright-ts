@@ -1,0 +1,10 @@
+{
+  "name": "playwright_tests",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {},
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.17.0"
+  }
+}
