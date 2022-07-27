@@ -1,10 +1,11 @@
 {
-  "name": "playwright_tests",
+  "name": "playwright-tests-sandbox",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {},
   "type": "module",
   "devDependencies": {
-    "@playwright/test": "^1.17.0"
-  }
+    "@playwright/test": "^1.23.4"
+  },
+  "scripts": {}
 }
