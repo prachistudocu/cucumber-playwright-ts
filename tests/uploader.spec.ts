@@ -14,7 +14,3 @@ for (const category of categories) {
         await page.waitForURL('**/upload/complete**');
     });
 }
-
-
-
-
