@@ -7,5 +7,12 @@
   "devDependencies": {
     "@playwright/test": "^1.23.4"
   },
-  "scripts": {}
+  "scripts": {
+    "webkit": "npx playwright test --headed --project='webkit'",
+    "webkit-headless": "npx playwright test --project='webkit'",
+    "chromium": "npx playwright test --headed --project='chromium' tests/login.spec.ts",
+    "chromium-headless": "npx playwright test --project='chromium'",
+    "debug-mode": "PWDEBUG=1 npx playwright test --headed --project='chromium'",
+    "all": "npx playwright test"
+  }
 }
