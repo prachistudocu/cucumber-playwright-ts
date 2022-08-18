@@ -1,7 +1,6 @@
 import {clickOnElement, fillInInput, waitForVisible} from "../utils.ts";
 import {type Page} from "@playwright/test";
 
-
 const uploaderUrl = 'https://local.studocu.com/en-gb/document/upload';
 
 const openOrganicUploader = async (page: Page) => {
@@ -20,7 +19,6 @@ const uploadAndSubmitDocument = async (page: Page) => {
     await page.waitForURL('**/details**', {waitUntil: "networkidle"});
     await waitForVisible(page, 'upload-step-2');
 }
-
 
 const fillInDocumentDetails = async (page: Page, categoryName: string) => {
     const description = 'Description is the fiction-writing mode for transmitting a mental image of the particulars of a story.';
@@ -69,4 +67,3 @@ export {
     uploadAndSubmitDocument,
     fillInDocumentDetails
 }
-
