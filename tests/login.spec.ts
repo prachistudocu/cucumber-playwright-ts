@@ -2,7 +2,6 @@ import {test} from '@playwright/test';
 import {clickOnElement, fillInInput, waitForVisible} from '../utils.ts';
 
 test('login from landing page', async ({page}) => {
-
     const url = 'https://local.studocu.com/en-gb';
     const userName = 'user@loc.com';
     const userPwd = 'milatests';
@@ -18,5 +17,4 @@ test('login from landing page', async ({page}) => {
     await fillInInput(page, 'password-input', userPwd);
     await clickOnElement(page, 'submit-login-button');
     await waitForVisible(page, 'user-menu-button');
-
 });
