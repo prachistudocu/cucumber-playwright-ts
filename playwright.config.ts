@@ -24,6 +24,7 @@ const config: PlaywrightTestConfig = {
             }
         },
     ],
+    reporter: [ ['html', { open: 'never' }] ]
 };
 
 export default config;

@@ -13,6 +13,7 @@
     "chromium": "npx playwright test --headed --project='chromium' tests/login.spec.ts",
     "chromium-headless": "npx playwright test --project='chromium'",
     "debug-mode": "PWDEBUG=1 npx playwright test --headed --project='chromium'",
-    "all": "npx playwright test"
+    "all": "npx playwright test",
+    "reports": "npx playwright show-report"
   }
 }
