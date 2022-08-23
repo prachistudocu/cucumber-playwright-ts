@@ -20,7 +20,8 @@ const config: PlaywrightTestConfig = {
             name: 'mobile',
             use: {
                 browserName: 'webkit',
-                ...devices['iPhone 8']
+                ...devices['iPhone 8'],
+                isMobile: true
             }
         },
     ],

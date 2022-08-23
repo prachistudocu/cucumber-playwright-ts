@@ -6,11 +6,11 @@
  - npx playwright install chromium webkit 
 
 ## Options to run tests:
- 1. npm run webkit (OR) npm run chromium
- 2. npm run webkit-headless (OR) npm run chromium-headless
+ 1. npm run chromium (OR) npm run webkit (OR) npm run mobile
+ 2. npm run chromium-headless (OR) npm run webkit-headless
  3. npm run debug-mode
  4. npm run all
- 5. npm run chromium tests/<test_file_name>   - to run single file in specific browser, for example in Chrome
+ 5. npm run <browser> tests/<test_file_name>   - to run single file in specific browser, for example in 'chromium' (for Chrome) or 'webkit' (for Safari)
 
 
 ### *General remarks:*
