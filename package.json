@@ -5,7 +5,9 @@
   "packages": {},
   "type": "module",
   "devDependencies": {
-    "@playwright/test": "^1.23.4"
+    "@playwright/test": "^1.23.4",
+    "@types/node": "^18.7.11",
+    "dotenv": "^16.0.1"
   },
   "scripts": {
     "chromium": "npx playwright test --headed --project='chromium'",

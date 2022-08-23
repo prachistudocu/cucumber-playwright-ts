@@ -1,7 +1,7 @@
 import {clickOnElement, fillInInput, waitForVisible} from "../utils.ts";
 import {type Page} from "@playwright/test";
 
-const uploaderUrl = 'https://local.studocu.com/en-gb/document/upload';
+const uploaderUrl = process.env.BASE_URL + '/document/upload';
 
 const openOrganicUploader = async (page: Page) => {
     await page.goto(uploaderUrl)

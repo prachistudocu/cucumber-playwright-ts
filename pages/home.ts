@@ -1,7 +1,7 @@
 import {clickOnElement, waitForVisible} from "../utils.ts";
 import {type Page, expect} from "@playwright/test";
 
-const url = 'https://local.studocu.com/en-gb';
+const url = process.env.BASE_URL;
 
 const openHome = async (page: Page) => {
     await page.goto(url);
