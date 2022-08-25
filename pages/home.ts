@@ -1,7 +1,7 @@
 import {clickOnElement, waitForVisible} from "../utils.ts";
 import {type Page, expect} from "@playwright/test";
 
-const url = process.env.BASE_URL;
+const url = process.env.BASE_URL + process.env.BASE_LOCALIZATION;
 
 const openHome = async (page: Page) => {
     await page.goto(url);
