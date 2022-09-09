@@ -57,8 +57,7 @@ Before(async function (this: ICustomWorld, { pickle }: ITestCaseHookParameter) {
     viewport: { width: 1200, height: 800 },
   });
   this.server = await request.newContext({
-    // All requests we send go to this API endpoint.
-    baseURL: config.BASE_API_URL,
+    baseURL: config.BASE_URL,
   });
 
   await this.context.tracing.start({ screenshots: true, snapshots: true });
