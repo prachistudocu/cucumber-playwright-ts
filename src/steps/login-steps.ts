@@ -1,12 +1,17 @@
 import { ICustomWorld } from '../support/custom-world';
-import { config } from '../support/config';
-import { Given } from '@cucumber/cucumber';
+import { clickloginButton, closeCookiesDisclaimer, openHome } from '../../pages/home';
+import { loginWithEmail } from '../../pages/login';
+import { Given, When } from '@cucumber/cucumber';
 
 Given('Go to the studocu website', async function (this: ICustomWorld) {
-  const page = this.page!;
-  await page.goto(config.BASE_URL);
+  openHome;
+  closeCookiesDisclaimer;
 });
 
-Given(/^I login as a fresh user$/, () => {
-  return true;
+Given('I login as a fresh user', async () => {
+  clickloginButton;
+});
+
+When('I enter username and password', async () => {
+  loginWithEmail;
 });
